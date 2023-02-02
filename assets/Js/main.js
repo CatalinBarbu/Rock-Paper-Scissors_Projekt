@@ -6,6 +6,8 @@ const rock = document.getElementsByClassName("rock")[0];
 const paper = document.getElementsByClassName("paper")[0];
 const scissors = document.getElementsByClassName("scissors")[0];
 outPutText = document.querySelector(".titleMain p");
+const buttonReload = document.querySelector(".buttonReload");
+console.log(buttonReload);
 console.log(outPutText);
 
 let counter = [0, 0];
@@ -40,3 +42,6 @@ function renderOutPut(text) {
   outPutPlayer2.innerHTML = counter[0];
   outPutText.innerHTML = text;
 }
+buttonReload.addEventListener("click", () => {
+  window.location.reload();
+});

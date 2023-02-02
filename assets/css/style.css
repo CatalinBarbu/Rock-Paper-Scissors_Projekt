@@ -8,7 +8,8 @@ body {
   max-width: 350px;
   margin: 2vh auto;
   background-color: black;
-  color: white;
+  color: darkorange;
+  text-shadow: 1px 0 10px darkred;
 }
 .allContainerBackground {
   background: #04018c;
@@ -98,7 +99,9 @@ section input[type="button"] {
 }
 .user {
   margin-right: 85px;
+  color: white;
 }
 .computer {
+  color: white;
   margin-left: 85px;
 }
