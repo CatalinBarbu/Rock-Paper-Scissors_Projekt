@@ -8,63 +8,75 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <section class="border">
-        <section class="title">
-          <p>how many rounds?</p>
+    <section class="allContainerBackground">
+      <header>
+        <section class="border">
+          <section class="title">
+            <p>how many rounds?</p>
+          </section>
+          <section class="rounds">
+            <article>
+              <input type="radio" name="rounds" id="rounds5" />
+              <label for="rounds5">5</label>
+            </article>
+            <article>
+              <input type="radio" name="rounds" id="rounds10" />
+              <label for="rounds10">10</label>
+            </article>
+          </section>
+          <section class="rounds">
+            <article>
+              <input type="radio" name="rounds" id="rounds15" />
+              <label for="rounds15">15</label>
+            </article>
+            <article>
+              <input type="radio" name="rounds" id="rounds20" />
+              <label for="rounds20">20</label>
+            </article>
+          </section>
         </section>
-        <section class="rounds">
-          <article>
-            <input type="radio" name="rounds" id="rounds5" />
-            <label for="rounds5">5</label>
-          </article>
-          <article>
-            <input type="radio" name="rounds" id="rounds10" />
-            <label for="rounds10">10</label>
-          </article>
+        <section class="border">
+          <section class="flex">
+            <article class="user">
+              <p>USER</p>
+            </article>
+            <article>
+              <p>
+                <span class="outPutPlayer1">0</span>:<span class="outPutPlayer2"
+                  >0</span
+                >
+              </p>
+            </article>
+            <article class="computer">
+              <p>COMP</p>
+            </article>
+          </section>
         </section>
-        <section class="rounds">
-          <article>
-            <input type="radio" name="rounds" id="rounds15" />
-            <label for="rounds15">15</label>
-          </article>
-          <article>
-            <input type="radio" name="rounds" id="rounds20" />
-            <label for="rounds20">20</label>
-          </article>
+      </header>
+      <main>
+        <section class="titleMain">
+          <p>Let`s play</p>
         </section>
-      </section>
-      <section class="border">
-        <section class="flex">
-          <p class="outPutPlayer1">0</p>
-          <p>:</p>
-          <p class="outPutPlayer2">0</p>
+        <section>
+          <p class="outPutText"></p>
         </section>
-      </section>
-    </header>
-    <main>
-      <section class="titleMain">
-        <p>Let`s play</p>
-      </section>
-      <section>
-        <p class="outPutText"></p>
-      </section>
-      <section>
-        <form onsubmit="return fals" id="choice">
-          <input type="button" value="✊🏽" class="rock" />
-          <input type="button" value="🤚🏽" class="paper" />
-          <input type="button" value="🤞🏽" class="scissors" />
-        </form>
-      </section>
-    </main>
-    <footer>
-      <article>
-        <p>MAKE YOUR MOVE</p>
-      </article>
-      <section>
-        <input type="button" value="restart" />
-      </section>
-    </footer>
+        <section>
+          <form onsubmit="return fals" id="choice">
+            <input type="button" value="✊🏽" class="rock" />
+            <input type="button" value="🤚🏽" class="paper" />
+            <input type="button" value="🤞🏽" class="scissors" />
+          </form>
+        </section>
+      </main>
+      <footer>
+        <article>
+          <p>MAKE YOUR MOVE</p>
+        </article>
+        <section>
+          <input type="button" value="restart" />
+        </section>
+      </footer>
+    </section>
     <script src="./assets/Js/main.js"></script>
   </body>
 </html>

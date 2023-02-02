@@ -6,13 +6,22 @@
 body {
   width: 100%;
   max-width: 350px;
-  margin: 0 auto;
+  margin: 2vh auto;
   background-color: black;
   color: white;
 }
+.allContainerBackground {
+  background: #04018c;
+  background: -webkit-linear-gradient(bottom, #04018c, #010101);
+  background: -moz-linear-gradient(bottom, #04018c, #010101);
+  background: linear-gradient(to top, #04018c, #010101);
+  box-shadow: 0 0 15px 3px darkred;
+  border-radius: 15px;
+  padding: 1vh 0;
+}
 .border {
   border: 3px solid white;
-  margin: 5vh 5vw 0 5vw;
+  margin: 5vh 20px 0 20px;
   padding: 3vh 0;
 }
 .title {
@@ -28,6 +37,7 @@ body {
 .flex {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 2.3rem;
 }
 .flex p {
@@ -75,4 +85,20 @@ section input[type="button"] {
   padding-top: 5vh;
   font-size: 1.5rem;
   text-shadow: 0 0 15px beige;
+}
+.user p,
+.computer p {
+  font-size: 0.9rem;
+}
+.user,
+.computer {
+  margin: 0 auto;
+  background-color: red;
+  border: 2px solid red;
+}
+.user {
+  margin-right: 85px;
+}
+.computer {
+  margin-left: 85px;
 }
